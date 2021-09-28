@@ -31,8 +31,11 @@ function    setColorPickerEventListeners(element, colors, pickerElements) {
 
 
 function setElementBGColor(bgElement, red, green, blue) {
+    console.log(bgElement, red, green, blue)
     let rgbVal = [red, green, blue].join(',');
-    bgElement.style.backgroundColor = "rgb (" + rgbVal + ")";
+    console.log(rgbVal)
+    console.log(bgElement.style)
+    bgElement.style.backgroundColor = `rgb(${rgbVal})`
 
 
 }
@@ -46,7 +49,5 @@ function setDisplayValues(red, green, blue) {
     greenVal.innerText = green;
     blueVal.innerText = blue;
 }
-
-
 
 
